@@ -1,46 +1,71 @@
-import { motion, useMotionValue, useTransform } from 'framer-motion';
 import './App.css';
-import styled from 'styled-components';
+import styled from '@emotion/styled';
+import { motion, AnimatePresence } from 'framer-motion';
+import { useState } from 'react';
 
-// const boxVariants = {
-//   hover: { scale : 1.5, rotateZ: 90 },
-//   click: { borderRadius: "100px" },
-//   drag: {backgroundColor: "rgba(255,255,0,0.5)", transition: { duration: 10 }}
-// }
+const box = {
+  entry: (back) => ({
+    x: back ? -500 : 500,
+    opacity: 0,
+    scale: 0
+  }),
+  center: {
+    x: 0,
+    opacity:1,
+    scale:1,
+    transition: {
+      duration: 0.3,
+    }
+  },
+  exit: (back) => ({
+    x: back ? 500 : -500, 
+    opacity:0, 
+    scale:0,
+    transition: {
+      duration: 0.3,
+    }
+  })
+}
 
 function App() {
-  const x = useMotionValue(0);
-  const scale = useTransform(x, [-800, 0, 800], [2, 1, 0.1]);
+  const [visible, setVisible] = useState(3);
+  const [back, setBack] = useState(false);
+  const nextPlease = () => {
+    setBack(false);
+    setVisible(prev => prev === 10 ? 10 : prev+1)
+  };
+  const prevPlease = () => {
+    setBack(true)
+    setVisible(prev => prev === 1 ? 1 : prev-1)
+  };
   return (
-    <div style={{backgroundColor: "pink", height: "100vh", display: "flex", justifyContent: "center", alignItems: "center"}}>
-      <button onClick={() => x.set(200)}>클릭!</button>
-      <Box 
-        style={{x, scale : scale}}
-        drag="x"
-        dragSnapToOrigin
-      />
+    <div style={{backgroundColor: "pink", height: "100vh", display: "flex", flexDirection:"column", justifyContent: "center", alignItems: "center"}}>
+      <AnimatePresence  mode="wait" custom={back}>
+        <Box 
+          variants={box} 
+          custom={back}
+          initial="entry" 
+          animate="center" 
+          exit="exit" 
+          key={visible}>
+            {visible}
+          </Box> 
+      </AnimatePresence>
+      <button onClick={prevPlease}>prev</button>
+      <button onClick={nextPlease}>next</button>
     </div>
   );
 }
 
 const Box = styled(motion.div)`
+  position: absolute;
+  top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100px;
   height: 100px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  background-color: rgba(255,255,255,1);
-  border-radius:40px;
+  background-color:white;
 `
-
-// const BiggerBox = styled.div`
-//   width: 300px;
-//   height: 300px;
-//   background-color: rgba(0,0,0,0.4);
-//   border-radius: 40px;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   overflow: hidden;
-// `
 
 export default App;
