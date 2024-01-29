@@ -1,70 +1,11 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<img width="321" alt="스크린샷 2024-01-29 오후 1 24 24" src="https://github.com/furaha707/nomad-framer/assets/95595106/1be74a94-acbb-4167-8b7b-0816771eab2e">
+<img width="319" alt="스크린샷 2024-01-29 오후 1 25 49" src="https://github.com/furaha707/nomad-framer/assets/95595106/2c036240-3016-4984-9647-8cb8c71f9832">
+<img width="320" alt="스크린샷 2024-01-29 오후 1 24 12" src="https://github.com/furaha707/nomad-framer/assets/95595106/fb8adb72-6cc7-40a2-a67b-761e3d44a1b1">
+<img width="320" alt="스크린샷 2024-01-29 오후 1 23 59" src="https://github.com/furaha707/nomad-framer/assets/95595106/da824282-99b2-43f4-960c-2eef038e126a">
+<img width="288" alt="스크린샷 2024-01-29 오후 1 23 03" src="https://github.com/furaha707/nomad-framer/assets/95595106/18a7d433-9a34-4d60-9ca1-2df1588b8887">
+<img width="292" alt="스크린샷 2024-01-29 오후 1 17 23" src="https://github.com/furaha707/nomad-framer/assets/95595106/712f7b35-4c38-4671-b423-c13a6ab74c0b">
+<img width="292" alt="스크린샷 2024-01-29 오후 1 17 08" src="https://github.com/furaha707/nomad-framer/assets/95595106/de48f634-05e6-4e8d-89e5-a372632633ee">
+<img width="288" alt="스크린샷 2024-01-29 오후 1 16 13" src="https://github.com/furaha707/nomad-framer/assets/95595106/d9b15e5d-e623-4e35-8f68-1769c6699967">
+<img width="293" alt="스크린샷 2024-01-29 오후 1 15 49" src="https://github.com/furaha707/nomad-framer/assets/95595106/6312864f-0d61-4499-ae80-1324c9fc734e">
+<img width="290" alt="스크린샷 2024-01-29 오후 1 15 37" src="https://github.com/furaha707/nomad-framer/assets/95595106/59829306-467f-434f-a40b-846841c8291e">
+<img width="288" alt="스크린샷 2024-01-29 오후 1 15 21" src="https://github.com/furaha707/nomad-framer/assets/95595106/72ded0ca-ef59-4ffc-a292-70b47dff63ed">
